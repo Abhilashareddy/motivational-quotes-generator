@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Motivational Ouotes Generator</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
         <h1>Welcome to AI Motivational Quotes Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of motivational quote.."
@@ -27,12 +28,9 @@
             autocomplete="off"
             class="instructions"
           />
-          <input type="submit" class="submit-button" />
+          <input type="submit" class="submit-button" id="submit-button" />
         </form>
-        <div class="quote">
-          The quote will go here <br />
-          The quote will go here
-        </div>
+        <div class="quote" id="quote"></div>
       </main>
 
       <footer>
