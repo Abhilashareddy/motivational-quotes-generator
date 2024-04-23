@@ -11,22 +11,24 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <title>AI Motivational Ouotes Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>AI Quotes Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to AI Motivational Quotes Generator</h1>
+        <h1>Welcome to AI Inspirational Quotes Generator</h1>
       </header>
       <main>
         <form id="quote-generator-form">
           <input
             type="text"
-            placeholder="Enter the topic of motivational quote.."
+            placeholder="e.g. worry, tired, calm.."
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" id="submit-button" />
         </form>
@@ -35,17 +37,18 @@
 
       <footer>
         This AI project was coded by
-        <a href="https://github.com/sasha-ak" target="_blank">Aleksandra K</a>
-        and
+        <a href="https://github.com/sasha-ak" target="_blank">Aleksandra K</a>,
+        is open-sourced
         <a
           href="https://github.com/sasha-ak/motivational-quotes-generator"
           target="_blank"
-          >is open-sourced on GitHub</a
         >
-        and hosted on
-        <a href="https://ai-motivational-quotes.netlify.app/" target="_blank"
-          >Netlify</a
-        >.
+          on GitHub</a
+        >
+        and hosted
+        <a href="https://ai-motivational-quotes.netlify.app/" target="_blank">
+          on Netlify</a
+        >
       </footer>
     </div>
     <script src="source/script.js"></script>
