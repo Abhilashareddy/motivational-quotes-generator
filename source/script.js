@@ -16,6 +16,11 @@ function generateNewQuote(event) {
 
   let prompt = `User instructions: generate inspirational quote about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="generating">You feel ${instructionsInput.value}, I am generating inspirational quote for you ⏳</div>`;
+
   //make a call to API
 
   axios.get(apiUrl).then(displayMotivationalQuote);
@@ -23,5 +28,5 @@ function generateNewQuote(event) {
 
 let quoteButton = document.querySelector("#quote-generator-form");
 quoteButton.addEventListener("submit", generateNewQuote);
-let quoteForm = document.querySelector("#quote");
-quoteForm.innerHTML = "How do you feel today?";
+//let quoteForm = document.querySelector("#quote");
+//quoteForm.innerHTML = "How do you feel today?";
