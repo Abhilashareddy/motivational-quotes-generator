@@ -20,19 +20,23 @@
         <h1>Welcome to AI Inspirational Quotes Generator</h1>
       </header>
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="e.g. worry, tired, calm.."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" id="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Hello, how do you feel today?"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" id="submit-button" />
+          </form>
+          <div class="hint">e.i. anxious, calm, joyful..</div>
+        </div>
+
+        <div class="quote hidden" id="quote"></div>
       </main>
 
       <footer>
